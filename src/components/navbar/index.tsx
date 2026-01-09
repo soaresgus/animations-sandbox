@@ -12,12 +12,13 @@ export function Navbar() {
     const NAV_ITEMS = [
         { href: "/", label: "Home" },
         { href: "/hover-background", label: "Hover Background" },
+        { href: "/lottie", label: "Lottie" },
     ]
 
     return (
         <nav
             className={clsx(
-                "fixed h-dvh bg-gray-100 border border-gray-600 p-4 transition-all duration-300 ease-in-out",
+                "fixed z-10 h-dvh bg-gray-100 border border-gray-600 p-4 transition-all duration-300 ease-in-out",
                 isOpen ? "w-64" : "w-20",
             )}
         >
